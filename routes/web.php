@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//客户端
+Route::get('api/reg','api\ApiController@reg');
+
+//服务端
+Route::post('ap/reg','ap\ApController@reg');
